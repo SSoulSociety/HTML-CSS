@@ -1,48 +1,41 @@
-<html>
-  <head>
-    <title>6th week Lab.</title>
-  </head>
-  <body>
-    <h1 id="main-heading">Basic Form</h1>
-    <form action="/submit" method="post">
-      <!-- Kullanıcı ID Girişi -->
-      Username:
-      <input type="text" name="user-id" required /><br /><br />
+<head>
+  <title>6th week Lab.</title>
+</head>
+<body>
+  <h1>Basic Form</h1>
+  <!-- Form Section -->
+  <form onsubmit="alert('Form submitted successfully!'); return false;">
+      <label for="username">Text Input (Username):</label>
+      <input type="text" id="username" name="username" required><br><br>
 
-      <!-- Şifre Girişi -->
-      Password:
-      <input type="password" required /><br /><br />
+      <label for="password">Password Input:</label>
+      <input type="password" id="password" name="password" required><br><br>
 
-      <!-- Metin Kutusu -->
-      Textarea: <br />
-      <textarea
-        name="textarea"
-        rows="10"
-        cols="30"
-        placeholder="Write something.."
-      ></textarea
-      ><br /><br />
+      <label for="comments">Metin giriniz:</label><br>
+      <textarea id="comments" name="comments" rows="10" cols="30" placeholder="Write something here..."></textarea><br><br>
 
-      <!--işaret Kutusu -->
-      <input type="checkbox" id="subscribe" name="subscribe" /> Subscribe for Newsletter <br /> <br />
-      <!-- Gönder Butonu -->
+      <label>
+          <input type="checkbox" name="subscribe" value="yes">
+          Subscribe to Newsletter
+      </label><br><br>
+
       <button type="submit">Submit</button>
-    </form>
+  </form>
 
-    <!--Table -->
-    <h1>Basic Frame</h1>
+  <hr>
 
-    <table>
-      <tr>
-        <td>
-          <iframe src="https://tr.wikipedia.org/wiki/Anasayfa" width="400" height="300"frameborder="1"></iframe>
-        </td>
-        <td>
-          <iframe src="https://tr.wikipedia.org/wiki/Anasayfa" width="400" height="300"frameborder="1"></iframe>
-        </td>
-      </tr>
-    </table>
+  <!-- Frames Section -->
+  <h2>Basic Frame</h2>
+  <p>Click the links below to navigate between frames:</p>
+  <iframe name="frame1" width="48%" height="300px"></iframe>
+  <iframe name="frame2" width="48%" height="300px"></iframe>
 
-    <a href="#main-heading" accesskey="t">Go to main heading or press alt + t</a>
-  </body>
+  <br><br>
+  <!-- Links Navigation -->
+  <a href="https://www.wikipedia.org" target="frame1">Open Wikipedia in Frame 1</a>
+  <a href="https://tr.wikipedia.org/wiki/Anasayfa" target="frame2">Open Vikipedi in Frame 2</a>
+  <hr>
+
+
+</body>
 </html>
