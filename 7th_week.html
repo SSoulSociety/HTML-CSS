@@ -1,64 +1,115 @@
-<html>
-  <head>
-    <title>Week 6</title>
-  </head>
-  <body>
-    <form
-      action="https://www.sample.com"
-      enctype="multipart/form-data"
-      method="get"
-    >
-      <input type="file" name="fileupload" value="Dosya seç" accept="image/*" />
-      <br />
-      <br />
-      <input type="submit" name="submitbuton" value="Submit" />
-    </form>
-    <hr>
-    <form action="https://www.sample.com" method="get">
-      <select name="days">
-        <optgroup label="Hardware">
-          <option value="Desktop Computers">Desktop Computers</option>
-          <option value="Laptop Computers">Laptop Computers</option>
-        </optgroup>
+<!DOCTYPE html>
+<html lang="en">
 
-        <optgroup label="Software">
-          <option value="Office Sofware">Office Software</option>
-          <option value="Games">Games</option>
-        </optgroup>
-      </select>
-    </form>
-<hr>
-    <form action="https://www.sample.com" method="get">
-      <select multiple="multiple" name="days">
-        <option value="Monday">Monday</option>
-        <option value="Tueday">Tuesday</option>
-        <option value="Wednesday" selected="selected">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-      </select>
-      <br><br>
-      <input type="submit" value="Submit">
-    </form>
-    <hr>
-    <form>
-      Please select which class of travel you wish to fly: <br>
-      <input type="radio" name="travelclass" value="First class"> First class<br>
-      <input type="radio" name="travelclass" value="Business class"> Business class<br>
-      <input  type="radio" name="travelclass" value="Economoy class" checked> Economy class<br>
-    </form>
-    <hr>
-    <form action="htttps//:www.sample.com" method="get">
-      Which skilss do you posses? <br>
-      <input type="checkbox" name="box1"value="HTML" checked>HTML <br>
-      <input type="checkbox" name="box1"value="XHTML">XHTML <br>
-      <input type="checkbox" name="box1"value="CSS">CSS <br>
-      <input type="checkbox" name="box1"value="JavaScript">JavaScript <br>
-      <input type="checkbox" name="box1"value="ASP.Net">ASP.Net<br>
-      <input type="checkbox" name="box1"value="PHP">PHP <br>
-      <input type="submit" name="submitbutton" value="Submit">
-        
-    </form>
-  </body>
+<head>
+    <title>First CSS Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            color: #000000;
+            padding: 10px;
+
+        }
+
+        h3 {
+            color: darkblue
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin-left: -25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+        }
+
+        td,tr {
+            border: 1px dashed red;
+        }
+
+        th {
+            background-color: darkblue;
+            color: aliceblue;
+            margin-left: 5px;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: left;
+            padding: 8px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            opacity: 0.5;
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        .highlight {
+            color: rgb(223, 11, 11);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to My First CSS Page</h1>
+        <h3>Introduction
+    </h2>
+    <p>CSS is used to style HTML elements</p>
+
+    <div>
+        <h3>Features</h2>
+            <ul>
+                <li><span class="highlight"> Easy to learn</span> syntax</li>
+                <li>Customizable <span class="highlight"> styles</span></li>
+                <li>Reuseable rules for consistency</li>
+            </ul>
+    </div>
+
+    <div>
+        <h3>Example Tables</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Font Styling</td>
+                    <td>Change the size, color, and family of text</td>
+                </tr>
+                <tr>
+                    <td>Backgrounds</td>
+                    <td>Add colors or images to elements</td>
+                </tr>
+                <tr>
+                    <td>Borders</td>
+                    <td>Customize borders around elements</td>
+                </tr>
+            </table>
+    </div>
+
+    <footer>
+        Made with ♥ while learning CSS.
+    </footer>
+</body>
+
+
 </html>
