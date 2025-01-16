@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=,, initial-scale=1.0">
-    <title>CSS box and list>
-        
-</head>
-<body>
 
-    
+<head>
+    <title>CSS box and List</title>
+    <style>
+        body {
+
+            align-items: center;
+            display: flex;
+            background-color: lightgray;
+            height: 100vh;
+            margin: 0;
+        }
+        .container{
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .box-container {
+            padding: 1px;
+            background-color: white;
+            margin-right: 0.5cm;
+            height: 40%;
+            border: 1px solid rgb(228, 31, 31);
+            width: 150px;
+        }
+
+        .overflow-box {
+            padding: 1px;
+            overflow: scroll;
+            border: 1px solid lightgray
+        }
+
+        .box1 {
+            color: white;
+            background-color: green;
+            padding: 30px;
+            text-align: center;
+            margin: 10px;
+            width: 2cm;
+            border-radius: 5px;
+        }
+
+        .box2 {
+            color: white;
+            background-color: blue;
+            padding: 30px;
+            text-align: center;
+            margin: 10px;
+            width: 2cm;
+            border-radius: 5px;
+
+        }
+
+        .box3 {
+            color: white;
+            background-color: orange;
+            padding: 30px;
+            text-align: center;
+            margin: 10px;
+            width: 2cm;
+            border-radius: 5px;
+        }
+
+        .list-container {
+            padding: 1px;
+            background-color: white;
+            height: 40%;
+            width: 1000px;
+            border: 1px solid gray;
+
+        }
+
+        li {
+            background-color: lightgray;
+            color: black;
+            border: 0px;
+            padding: 2px
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box-container">
+            <div class="box1">Box 1</div>
+            <div class="box2"> Box 2 </div>
+            <div class="box3"> Box 3 </div>
+        </div>
+
+        <div class="list-container">
+            <h3>Lİste</h3>
+            <ul>
+                <li class="list1">Do homework</li>
+                <li class="list2">Do exercise</li>
+                <li class="list3">Go shopping</li>
+            </ul>
+            <div class="overflow-box">,
+                <p> Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çikar.
+                    Ek metin ekleyerek taşmayi test edebilirsinizs</p>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
