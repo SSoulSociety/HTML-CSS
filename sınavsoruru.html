@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .left-container, .right-container {
+            flex-direction: column;
+            border: 1px solid #000;
+       
+        }
+        .a, .b, .c, .d {
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .left-container .a, .left-container .b {
+            width: 200px;
+        }
+        .a {
+            height: 200px;
+        }
+        .b {
+            height: 600px;
+        }
+        .right-container .c, .right-container .d {
+            width: 600px;
+        }
+        .c {
+            height: 500px;
+        }
+        .d {
+            height: 300px;
+        }
+        h1, p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-container">
+        <div class="a">
+            <h1>Yasar</h1>
+            <p>Karacam</p>
+        </div>
+        <div class="b">
+            <h1>Yasar</h1>
+            <p>Karacam</p>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="c">
+            <h1>Yasar</h1>
+            <p>Karacam</p>
+        </div>
+        <div class="d">
+            <h1>Yasar</h1>
+            <p>Karacam</p>
+        </div>
+    </div>
+</body>
+</html>

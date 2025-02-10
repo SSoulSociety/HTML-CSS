@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        function karsila() {
+            var name = document.getElementById("isim").value;
+
+            if (name) {
+                alert("Hoşgeldiniz" + " " + name + "!")
+            }
+        
+
+        }
+
+        function topla() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            var total = Number(num1) + Number(num2);
+
+            document.getElementById("p").innerHTML ="Sonuç:" + total;
+
+        }
+
+    </script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(243, 182, 160);
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Merhaba!</h1>
+    <p>Lütfen adinizi girin:</p>
+
+    <input id="isim" type="text" placeholder="Adiniz.." required>
+    <button id="button1" onclick="karsila()">Gönder</button>
+
+    <h2>Toplama İşlemi</h2>
+    <p >İki sayi giriniz:</p>
+
+    <input id="num1" type="number" placeholder="1.sayi">
+    <input id="num2" type="number" placeholder="2.sayi">
+    <button id="button2" onclick="topla()">Topla</button>
+
+    <p id="p"></p>
+</body>
+
+</html>

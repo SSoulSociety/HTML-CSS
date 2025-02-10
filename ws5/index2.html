@@ -2,29 +2,32 @@
 
 <head>
     <script type="text/javascript">
-        var cnt = 0;
+        /*var cnt = 0;
         function test() {
-            //var txt = prompt("Bir sey yazin: ");
-            //alert(txt);
-            /*cnt++;
-            document.getElementById("header1").innerHTML="Metin Degisti!"; 
-            if(cnt%2==0)
-            document.getElementById("header1").style.color = "Red";
-            else 
-            document.getElementById("header1").style.color = "Blue";
-        
-        
-            location.href = "https://www.google.com";*/
-            //var item = document.getElementById("list");
+
+            var txt = prompt("Bir sey yazin: ");
+            alert(txt);
+
+            cnt++;
+            document.getElementById("header1").innerHTML = "Metin Degisti!";
+            
+            if (cnt % 2 == 0)
+                document.getElementById("header1").style.color = "Red";
+            else
+                document.getElementById("header1").style.color = "Blue";
+
 
         }
-
+        */
         function validate() {
             var kadi = document.getElementById("kadi").value;
             var pass = document.getElementById("pass1").value;
             var passr = document.getElementById("pass2").value;
-            if (kadi.length < 8) alert("Kullanici adi cok kisa");
-            if (pass != passr) alert("Sifreler aynı değil!");
+
+            if (kadi.length < 8)
+                alert("Kullanici adi cok kisa");
+            if (pass != passr)
+                alert("Sifreler ayni  değil!");
             return false;
         }
     </script>
